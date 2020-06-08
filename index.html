@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+  </head>
+  <body onload="timer()">
+    <main>
+      <h2>Currency Converter</h2>
+      <section>
+        <div class="rur">
+          <aside>
+            <input id="buttonClick" class="input-rur" type="text" name="input" value="" placeholder="Enter the amount of currency.">
+            <button class="button-rur" type="button" name="button" onclick="convert()">Calculate in RUR</button>
+          </aside>
+          <menu>
+            <p>
+              USD <br>
+              <span id="USD">00.00</span>
+            </p>
+            <p>
+              EUR <br>
+              <span id="EUR">00.00</span>
+            </p>
+          </menu>
+        </div>
+        <div class="usd-eur">
+          <div class="results">
+            <p>USD: <span id="dl">00.00</span></p>
+            <p>EUR: <span id="er">00.00</span></p>
+          </div>
+          <div class="time-data">
+            <h3>Current time:</h3>
+            <p id="timer">
+              <span id="hh">HH</span>:<span id="mm">MM</span>:<span id="ss">SS</span> <span id="dd">DD</span>.<span id="mn">MM</span>.<span id="ee">EEEE</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <p style="text-align:center; color:#fff;">Powered by Fe1ixTheCat. All right reserved.</p>
+    <script src="//www.cbr-xml-daily.ru/daily_jsonp.js" async></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="parser.js"></script>
+  </body>
+</html>

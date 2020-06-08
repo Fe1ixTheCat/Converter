@@ -1,0 +1,113 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Baloo Chettan 2', cursive;
+}
+body {
+  background-color: #3B3B3B;
+}
+main {
+  margin-top: 10%;
+  background-color: #FFC68C;
+  width: 600px;
+  height: 300px;
+  border-radius: 25px;
+}
+h2 {
+  position: relative;
+  top: 10px;
+  color: #3B3B3B;
+  text-align: center;
+}
+button:active {
+  filter: brightness(90%);
+  transition: 0.2s;
+  box-shadow: 0.05em 0.05em 5px rgba(122, 122, 122, 0.5);
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+section {
+  width: 95%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+section .rur {
+  width: 100%;
+  height: 100%;
+}
+section .usd-eur {
+  width: 100%;
+  height: 100%;
+}
+section .usd-eur .results {
+  width: 100%;
+  height: 120px;
+  margin-top: 30px;
+}
+section .usd-eur .results p {
+  width: 90%;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+  color: #3B3B3B;
+}
+section .usd-eur .time-data {
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: #3B3B3B;
+  color: #FFC68C;
+  text-align: center;
+}
+aside .input-rur {
+  border-radius: 15px;
+  border: 0px;
+  width: 85%;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 15px;
+  font-size: 18px;
+  padding-left: 10px;
+  color: #3B3B3B;
+}
+aside .button-rur {
+  border-radius: 15px;
+  border: 0px;
+  width: 88%;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 15px;
+  color: #FFC68C;
+  background-color: #3B3B3B;
+  transition: 0.3s;
+}
+aside .button-rur:hover {
+  box-shadow: 0.1em 0.1em 5px rgba(122, 122, 122, 0.5);
+}
+aside button,
+aside button:active,
+aside button:focus {
+  outline: none;
+}
+menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 1px solid #3B3B3B;
+  border-radius: 25px;
+  width: 80%;
+  height: 90px;
+  margin-top: 10px;
+}
+menu p {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  color: #3B3B3B;
+}
